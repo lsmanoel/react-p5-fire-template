@@ -55,6 +55,10 @@ export class FireAnimationProcess {
   sourceLength: number
   sourceStart: number
 
+  get ascendantDecay (): number {
+    return this._ascendantDecay
+  }
+
   set ascendantDecay (inputValue: number) {
     if (inputValue < 2) {
       inputValue = 2

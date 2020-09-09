@@ -9,6 +9,6 @@ export interface Animation {
   myP5: p5
   animationSize: AnimationSize
 
-  sketch (p: p5): void
-  build (ref: HTMLElement): void
+  sketch: (p: p5) => void
+  build: (ref: HTMLElement) => void
 }
