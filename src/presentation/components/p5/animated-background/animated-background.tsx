@@ -3,15 +3,20 @@ import { FireAnimation } from '@/presentation/p5'
 
 const AnimatedBackgroud: React.FC = () => {
   const myRef = useRef<HTMLDivElement>()
+  const density = 6
   const fireAnimation = new FireAnimation(
-    { height: 100, width: 200 },
-    5,
+    {
+      height: Math.floor(window.innerHeight / density) + 1,
+      width: Math.floor(window.innerWidth / density) + 1
+    },
+    density,
     30,
     1,
     1,
     2,
-    50,
-    75)
+    Math.floor(window.innerWidth / (density * 2)),
+    Math.floor(window.innerWidth / (density * 4))
+  )
 
   useLayoutEffect(() => {
     fireAnimation.build(myRef.current)
