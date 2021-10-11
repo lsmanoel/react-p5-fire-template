@@ -2,7 +2,7 @@ import p5 from 'p5'
 import { Animation, AnimationSize } from '@/presentation/p5/protocols/animation'
 import { FireAnimationProcess } from './fire-animation-process'
 
-export class FireAnimation implements Animation {
+export default class FireAnimation implements Animation {
   constructor (
     readonly animationSize: AnimationSize,
     readonly pixelDensity: number = 1,

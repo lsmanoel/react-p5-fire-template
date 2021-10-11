@@ -1,5 +1,5 @@
 import React from 'react'
-import AnimatedBackgroud from '@/presentation/components/p5/animated-backgroud/animated-backgroud'
+import { AnimatedBackgroud } from '@/presentation/components'
 
 const Home: React.FC = () => {
   return (
